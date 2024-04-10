@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+		<!-- 
+			w-max 	 // width: max-content;
+			w-min 	 // width: min-content;
+			w-1/4 	 // width: 25%;
+			w-1/2 	 // width: 50%;
+			w-full   // width: 100%;
+			h-screen // height: 100vh;
+			text-5xl 		// font size
+			flex 	 		// display: flex;
+			flex-row		// flex-direction: row;
+			flex-column		// flex-direction: column;
+			items-center 	// aling-items: center;
+			justify-center 	// justify-content: center;
+
+
+			<Icon name="mdi:alien" />
+
+		-->
+
+		
+     
+
+    
+  </body>
+
+  <slot />
+</html>
+
+<style is:global></style>
